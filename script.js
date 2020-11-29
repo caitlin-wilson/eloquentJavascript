@@ -1,17 +1,20 @@
+/*** CHAPTER 2 - PROGRAM STRUCTURE ***/
+
+
+
 function chessboard(n) {
-    let string = ' ';
+    let string = '';
 
     for(let i = 0; i < n; i++) {
-        for(let j = 0; j < n; j++) {
-            while(string.length < n) {
-                if(string.length % 2 === 1) {
-                    string += '#';
-                } else {
-                    string += ' ';
-                }
+        for(j = 0; j < n; j++) {
+            if(string.length % 2 === 0) {
+                string += '#';
+            } else {
+                string += ' ';
             }
         }
+        string = string + '\n';
     }
 
-    console.log(string, string.length);   
+    console.log(string);   
 }
