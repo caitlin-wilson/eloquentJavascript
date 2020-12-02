@@ -41,14 +41,24 @@ function isEven(n) {
 
 function countsBs(word) {
     let counter = 0;
-    let letter;
 
     for(let i = 0; i < word.length; i++) {
-        letter = word[i];
-        if(letter.toLowerCase === 'b') {
+        if(word[i].toLowerCase() === 'b') {
             counter++;
-        } else {
-            counter += 0;
         }
     }
+
+    return counter;
+}
+
+function countLetter(word, letter) {
+    let counter = 0;
+
+    for(let i = 0; i < word.length; i++) {
+        if(word[i].toLowerCase() === letter) {
+            counter++;
+        }
+    }
+
+    return counter;
 }
