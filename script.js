@@ -62,3 +62,17 @@ function countLetter(word, letter) {
 
     return counter;
 }
+
+/*** CHAPTER 3 - DATA STRUCTURES ***/
+
+function range(lowN, highN) {
+    let rangeArr = [];
+    
+    while(lowN <= highN) {
+        rangeArr.push(lowN);
+        lowN++;
+    }
+
+    return rangeArr;
+}
+
