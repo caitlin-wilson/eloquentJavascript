@@ -159,5 +159,18 @@ function loop(val, test, update, result) {
 }
 
 function everyLoop(array, test) {
-    
+    for(let element of array) {
+        if (!test(element)) {
+            return false;
+        }
+    }
+    return true;
 }
+
+function loop(array, test) {
+    return !array.some(element => !predicate(element));
+}
+
+//SKIPPED DOMINANT WRITING HAND.
+
+/*** CHAPTER 6 - SECRET LIFE OF OBJECTS ***/
