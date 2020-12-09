@@ -149,6 +149,15 @@ let obj = {here: {is: "an"}, object: 2};
 let arrays = [[1, 2, 3], [4, 5], [6]];
 
 let flattening = arrays.reduce((acc, val) => {
-  return acc.concat(val);
+    return acc.concat(val);
 }, []) 
 
+function loop(val, test, update, result) {
+    for( let i = val; test(i); i = update(i)) {
+        result(i);
+    }
+}
+
+function everyLoop(array, test) {
+    
+}
